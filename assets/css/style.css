@@ -18,6 +18,13 @@ h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #2C698D;
+    position: absolute;
+    padding-left: 70px;
+}
+
+.header-logo {
+    width: 50px;
+    float: left;
 }
 
 /* Navigation links with hover effect */
@@ -38,7 +45,7 @@ nav ul {
 
 nav li {
     float: right;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 20px;
 }
 
 nav ul li a {
@@ -193,6 +200,17 @@ img {
         display: block;
         padding: 40px 0 40px 0;
         text-align: center;
+    }
+
+    .header-logo {
+        float: none;
+        position: relative;
+    }
+
+    h1 {
+        position: relative;
+        top: -15px;
+        padding: 0;
     }
 
     .main-section {
