@@ -167,6 +167,11 @@ img {
     color: #2C698D;
 }
 
+.contact-section li a {
+    color: #2C698D;
+    text-decoration: none;
+}
+
 .contact-icon {
     width: 28px; 
     float: left; 
