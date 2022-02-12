@@ -8,8 +8,8 @@ This page satisfies the following requirements of the assignment:
 
 - Shows my name, bio, samples of my work and contact information in a clean, organized layout
 - The navigation and contact links all function correctly
-- The work images link to the specific application (with placeholder links for the future projects)
-- The CSS includes media queries so the page layout changes at two specific breakpoints
+- The main work image links to the specific application and the smaller work images have placeholder links for future projects
+- The CSS includes media queries so the page layout changes at two breakpoints
 - The page is live in GitHub and loads with no errors
 
 ## Screenshot
