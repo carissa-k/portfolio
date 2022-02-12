@@ -1,0 +1,268 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin:0;
+}
+
+/* Header */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 40px 80px;
+    background: #ebf9fd;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #005a72;
+}
+
+/* Navigation links with hover effect */
+
+nav {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-right: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: right;
+    padding: 0 0 0 30px;
+}
+
+nav ul li a {
+    position:relative;
+    display: block;
+    text-decoration: none;
+    color: #005a72;
+    padding: 15px 0;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 80%;
+    left: 0;
+    background: #518fb6;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+nav ul li a:hover {
+    color: #518fb6;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+ 
+  /* Header image  */
+
+.main-image {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/main-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Global CSS for all three sections */
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    flex: 1;
+    padding: 80px;
+    font-size: 32px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #005a72;
+}
+
+.title-border {
+    border-bottom: dotted 2px #518fb6;
+}
+
+.section-right {
+    flex: 4;
+    padding: 85px 80px 40px 0;
+    font-size: 18px;
+}
+
+/* Work Section */
+
+img {
+    width: 100%;
+    margin-bottom:15px;
+}
+
+.img-sm-left {
+    width: 49%; 
+    float: left;
+}
+
+.img-sm-right {
+    width: 49%; 
+    float: right;
+}
+
+/* Contact Section */
+
+.section-title-contact {
+    flex: 1;
+    padding: 80px;
+    font-size: 32px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #005a72;
+    background: #ebf9fd;
+}
+
+.contact-section {
+    flex: 4;
+    padding: 85px 80px 0 0;
+    font-size: 18px;
+    background: #ebf9fd;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    float:right;
+}
+
+.contact-section li {
+    padding: 5px 0 0 0;
+    font-size: 16px; 
+    font-weight: 600;
+    color: #005a72;
+}
+
+.contact-icon {
+    width: 28px; 
+    float: left; 
+    padding: 0 8px 0 30px;
+    position: relative;
+    top: -5px;
+}
+
+/* On screens that are 992px or less, portfolio images stack in single column */
+@media screen and (max-width: 992px) {
+    .img-sm-left {
+        width: 100%; 
+        float: none;
+    }
+    
+    .img-sm-right {
+        width: 100%; 
+        float: none;
+    }
+
+    .section-title-contact {
+        padding: 80px 25px 80px 80px;
+    }
+
+  
+  /* On screens that are 600px or less, the navigation links stack and the content is centered in a single column with titles centered above each section */
+  
+  @media screen and (max-width: 600px) {
+
+    .main-header {
+        display: block;
+        padding: 40px 0 40px 0;
+        text-align: center;
+    }
+
+    .main-section {
+        display: block;
+    }
+
+    nav {
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav ul {
+        margin: 0;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    
+    nav li {
+        float: none;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0 15px 0;
+    }
+
+    nav ul li a::after {
+        display: none;
+    }
+
+    .section-title {
+        display: block;
+        padding: 50px 0 40px 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .section-right {
+        display: block;
+        padding: 0;
+        margin: 0 50px;
+    }
+
+    .section-title-contact {
+        padding: 50px 0 20px 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .contact-section {
+        padding: 0;
+    }
+
+    .contact-section ul {
+        margin: 0; 
+        padding: 10px;
+        display: block;
+        float:none;
+        text-align: center;
+    }
+
+    .contact-section li {
+        padding: 0 0 20px 0;
+    }
+    
+    .contact-icon {
+        display: block;
+        margin: 0 auto;
+        float: none; 
+        padding: 0; 
+    }
+
+    }
