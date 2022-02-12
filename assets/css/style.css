@@ -17,7 +17,7 @@ h1 {
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #005a72;
+    color: #2C698D;
 }
 
 /* Navigation links with hover effect */
@@ -45,7 +45,7 @@ nav ul li a {
     position:relative;
     display: block;
     text-decoration: none;
-    color: #005a72;
+    color: #2C698D;
     padding: 15px 0;
 }
 
@@ -95,7 +95,7 @@ nav ul li a:hover::after {
     font-size: 32px;
     font-weight: 200;
     text-transform: uppercase;
-    color: #005a72;
+    color: #2C698D;
 }
 
 .title-border {
@@ -133,7 +133,7 @@ img {
     font-size: 32px;
     font-weight: 200;
     text-transform: uppercase;
-    color: #005a72;
+    color: #2C698D;
     background: #ebf9fd;
 }
 
@@ -157,7 +157,7 @@ img {
     padding: 5px 0 0 0;
     font-size: 16px; 
     font-weight: 600;
-    color: #005a72;
+    color: #2C698D;
 }
 
 .contact-icon {
